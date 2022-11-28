@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+  background-color: #181d23;
+  overflow-x: hidden;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #141414;
+  border-bottom: 2px solid #df6c4f;
+}
+
+a.logo {
+  color: #df6c4f;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #141414;
+  height: 8rem;
+}
+
+ul.menu-items {
+  display: flex;
+  gap: 4rem;
+}
+
+a.nav-link {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+a.nav-link:hover {
+  color: #df6c4f;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.nav-link.sign-in {
+  border: 2px solid #df6c4f;
+  padding: 1rem;
+}
+
+.nav-link.sign-in:hover {
+  color: #df6c4f;
+  border: 2px solid #fff;
+}
+
+.hero {
+  background-image: url("img/black-panther.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 75vh;
+}
+
+.poster {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  width: 50rem;
+  height: 75vh;
+}
+
+.poster-info h1 {
+  font-size: 6rem;
+  line-height: 1;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.poster-info p {
+  padding: 2rem 0 4rem 0;
+}
+
+.btn {
+  padding: 1.5rem 3em;
+  background-color: #df6c4f;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #df6c4f;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+.categories-title {
+  font-size: 2rem;
+}
+
+.view {
+  color: #df6c4f;
+}
+
+.popular.movies {
+  padding: 6rem 0;
+}
+
+.movies-card-info {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.movie-card {
+  position: relative;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 30rem;
+}
+
+.movies-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.movie-title {
+  color: #fff;
+}
+
+.movie-title:hover {
+  color: #df6c4f;
+}
+
+.movie-title span {
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.year {
+  color: #df6c4f;
+}
+
+.trailer {
+  background-image: url(img/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.custom-bg {
+  background: linear-gradient(
+    to right,
+    rgba(32, 32, 32, 0.7) 150px,
+    rgba(32, 32, 32, 0.77) 100%
+  );
+}
+
+.trailer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+.play {
+  text-align: center;
+}
+
+.trailer-btn {
+  display: block;
+  padding: 1.5rem 0;
+}
+
+.play svg {
+  color: #df6c4f;
+}
+
+.recent-movies {
+  padding: 6rem 0;
+}
+
+.movie-filter {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  margin-bottom: 3rem;
+}
+
+.filter-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-item.active {
+  color: #df6c4f;
+}
+
+.filter-item {
+  color: #fff;
+  border-left: 1px solid #fff;
+  padding: 0 1.5rem;
+}
+
+.showtimes {
+  padding: 6rem 0;
+}
+
+.showtimes .categories-title {
+  padding-bottom: 3rem;
+}
+
+.buy-btn {
+  font-size: 1.2rem;
+  padding: 1rem 4rem;
+}
+
+.tv-shows {
+  padding: 6rem 0;
+}
+
+.sign-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 5rem 0;
+}
+
+.sign-form {
+  background-color: #141414;
+  border: 1px solid #222028;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 3rem;
+  position: relative;
+  width: 100%;
+  max-width: 40rem;
+  text-align: center;
+}
+
+.sign-form h2 {
+  padding-bottom: 2rem;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.user-input {
+  width: 100%;
+  background-color: #fff3;
+  height: 46px;
+  color: #fff;
+  width: 100%;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.remember {
+  text-align: left;
+}
+
+.sign-btn.btn {
+  width: 100%;
+  cursor: pointer;
+}
+
+.input-link {
+  font-size: 1.4rem;
+  color: #df6c4f;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table th,
+table td {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #141414;
+  margin-top: 5rem;
+  padding: 2rem 0;
+}
+
+.subscribers-info {
+  padding: 3rem 0;
+}
+
+.subscribers-info h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.subscribers-info p {
+  padding: 1rem 0;
+}
+
+.subscribe-input {
+  color: #fff;
+  background-color: #fff3;
+  padding: 1.5rem;
+  width: 50%;
+  margin: 1rem 0;
+}
+
+.sub-btn {
+  padding: 1.5rem;
+  border: none;
+  margin-right: 3rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-title {
+  letter-spacing: 2px;
+}
+
+.show-message {
+  color: #df6c4f;
+  font-size: 2rem;
+}
+
+
+
+/* responsive */
+
+@media screen and (max-width: 1140px) {
+  .movies-card-info {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar-collapse {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+  
+  .movies-card-info {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: left;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+  .movies-card-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.navbar-toggle {
+  background: none;
+}
+
+.navbar-toggle-icon svg {
+  color: #df6c4f;
+}
+
+
+
+
+
